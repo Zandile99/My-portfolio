@@ -1,0 +1,444 @@
+/* =================================
+   GENERAL
+   ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    transition: 0.3s;
+}
+/* =================================
+   SIDEBAR
+   ================================= */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #222;
+    color: white;
+    padding: 25px 15px;
+}
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e91e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+.profile h2 {
+    margin-top: 12px;
+}
+.profile p {
+    margin-top: 5px;
+    color: #ccc;
+}
+/* =================================
+   NAVIGATION
+   ================================= */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 13px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover,
+nav a.active {
+    background: #e91e63;
+}
+/* =================================
+   DARK MODE BUTTON
+   ================================= */
+#darkModeBtn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* =================================
+   MAIN CONTENT
+   ================================= */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    min-height: 100vh;
+}
+/* =================================
+   HOME PAGE
+   ================================= */
+.home {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.home-text {
+    flex: 1;
+}
+.welcome {
+    color: #e91e63;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.home h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+.home h1 span {
+    color: #e91e63;
+}
+.home h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #555;
+}
+.intro {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+.goal {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+/* =================================
+   PERSONAL INFORMATION
+   ================================= */
+.personal-info {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+}
+.personal-info div {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+   box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.personal-info strong {
+    color: #e91e63;
+}
+.personal-info p {
+    margin-top: 7px;
+}
+/* =================================
+   BUTTON
+   ================================= */
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    transform: translateY(-3px);
+}
+/* =================================
+   HOME PHOTO
+   ================================= */
+.home-photo {
+    text-align: center;
+}
+.photo-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #e91e63;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+    animation:
+        float 3s ease-in-out infinite;
+}
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-photo p {
+    margin-top: 15px;
+    color: #777;
+}
+/* =================================
+   PHOTO ANIMATION
+   ================================= */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* =================================
+   QUICK INFORMATION
+   ================================= */
+.quick-info {
+    max-width: 1100px;
+    margin: 20px auto 50px;
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+}
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.info-card:hover {
+    transform: translateY(-8px);
+}
+.info-card h3 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+/* =================================
+   GENERAL CARD
+   ================================= */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.card h1 {
+    color: #e91e63;
+    margin-bottom: 25px;
+}
+.card h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* =================================
+   ABOUT PAGE
+   ================================= */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #e91e63;
+}
+.about-text {
+    flex: 1;
+}
+/* =================================
+   FAMILY PAGE
+   ================================= */
+.family-cards {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+/* =================================
+   HOBBIES
+   ================================= */
+.hobby-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.hobby-card {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+.hobby-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.hobby-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.hobby-card h2 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+/* =================================
+   GALLERY
+   ================================= */
+.gallery {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+.gallery-item {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* =================================
+   CONTACT FORM
+   ================================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+textarea {
+    height: 120px;
+    resize: none;
+}
+form .button {
+    margin-top: 20px;
+}
+/* =================================
+   DARK MODE
+   ================================= */
+body.dark {
+    background: #121212;
+    color: white;
+}
+body.dark .home h2 {
+    color: #ccc;
+}
+body.dark .personal-info div,
+body.dark .info-card,
+body.dark .card {
+    background: #1f1f1f;
+}
+body.dark .hobby-card,
+body.dark .gallery-item {
+    background: #292929;
+}
+body.dark .home-photo p {
+    color: #bbb;
+}
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+   ================================= */
+@media (max-width: 800px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .home h1 {
+        font-size: 36px;
+    }
+    .personal-info {
+        flex-direction: column;
+    }
+    .quick-info {
+        grid-template-columns: 1fr;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .family-cards {
+        grid-template-columns: 1fr;
+    }
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .photo-circle {
+        width: 230px;
+        height: 230px;
+    }
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
