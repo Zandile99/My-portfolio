@@ -1,1 +1,0 @@
-Place your images here, e.g. profile.jpg
