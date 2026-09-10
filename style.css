@@ -442,3 +442,81 @@ body.dark .home-photo p {
         height: 200px;
     }
 }
+/* =================================
+   CONTACT DETAILS
+   ================================= */
+.contact-details {
+    margin: 25px 0 30px;
+    padding: 25px;
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+
+.contact-details h2 {
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.contact-details h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+.contact-details i {
+    color: #e91e63;
+    width: 25px;
+    margin-right: 8px;
+}
+
+/* =================================
+   SOCIAL MEDIA LINKS
+   ================================= */
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+.social-links i {
+    color: white;
+    width: auto;
+    margin: 0;
+}
+/* =================================
+   CONTACT DARK MODE
+   ================================= */
+body.dark .contact-details {
+    background: #292929;
+}
+.footer {
+    background: #111827;
+    color: #f3f4f6;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    border-top: 3px solid #3b82f6;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
