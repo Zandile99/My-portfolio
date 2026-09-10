@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zandile Kama | Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <!-- SIDEBAR -->
@@ -30,36 +32,81 @@
             🌙 Dark Mode
         </button>
     </aside>
-
-
     <!-- MAIN CONTENT -->
     <main class="content">
         <section class="card">
-            <h1>Contact Me 📞 </h1>
+            <h1>Contact Me 📞</h1>
             <p>
-                If you would like to get in touch with me,  you can use the form below.
+                If you would like to get in touch with me, you can use the
+                contact details below or send me a message.
             </p>
+            <!-- CONTACT DETAILS -->
+            <div class="contact-details">
+
+                <h2>My Contact Details</h2>
+                <p>
+                    <i class="fa-solid fa-user"></i>
+                    <strong>Name:</strong> Zandile Kama
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <strong>Phone:</strong> 078 062 4190
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <strong>Email:</strong> kamazandile700@email.com
+                </p>
+                <!-- SOCIAL MEDIA -->
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://wa.me/27780624190"
+                       target="_blank"
+                       title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/kama_zandile/"
+                       target="_blank"
+                       title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/Zandile Kama/"
+                       target="_blank"
+                       title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <!-- CONTACT FORM -->
             <form id="contactForm">
-                <label for="name"> Name </label>
+                <label for="name">Name</label>
                 <input
                     type="text"
                     id="name"
-                    placeholder="Enter your name" >
-                <label for="email"> Email </label>
+                    placeholder="Enter your name">
+                <label for="email">Email</label>
                 <input
                     type="email"
                     id="email"
-                    placeholder="Enter your email" >
-                <label for="message"> Message </label>
+                    placeholder="Enter your email">
+                <label for="message">Message</label>
                 <textarea
                     id="message"
-                    placeholder="Write your message" ></textarea>
+                    placeholder="Write your message"></textarea>
                 <button
                     type="submit"
-                    class="button" > Send Message </button>
+                    class="button">
+                   Send Message
+                </button>
             </form>
         </section>
-        </main>
-      <script src="script.js"></script>
+               <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2026 Zandile Kama | Application Technology Portfolio</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
